@@ -1,0 +1,61 @@
+class Solution{
+
+    // Function to find the trapped water between the blocks.
+    public:
+    long long trappingWater(int a[], int n){
+        // code here
+        int i,max1[n]={0},max2[n]={0},wl,j,k,p;long long r=0;
+        j=1;k=n-2;
+            while(j<n-1){
+                i=j-1;
+            max1[j]=max(max1[j-1],a[i]);
+           
+                j++;;
+            }
+             while(k>0)
+            {p=k+1;
+                max2[k]=max(max2[k+1],a[p]);
+              
+                k--;
+            }
+        for(i=1;i<n-1;i++)
+        {
+           
+            wl=min(max1[i],max2[i]);
+            if((wl-a[i])>0)
+            r+=wl-a[i];
+           
+            
+        }
+        return r;
+    }
+};
+
+// { Driver Code Starts.
+
+int main(){
+    
+    int t;
+    //testcases
+    cin >> t;
+    
+    while(t--){
+        int n;
+        
+        //size of array
+        cin >> n;
+        
+        int a[n];
+        
+        //adding elements to the array
+        for(int i =0;i<n;i++){
+            cin >> a[i];            
+        }
+        Solution obj;
+        //calling trappingWater() function
+        cout << obj.trappingWater(a, n) << endl;
+        
+    }
+    
+    return 0;
+}  // } Driver Code Ends
