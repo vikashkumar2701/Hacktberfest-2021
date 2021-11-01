@@ -33,6 +33,11 @@
     text-decoration: none;
     color: #FFF5FD;
     font-size: 15px;
+    transition: all .5s ease-out;
+}
+.navbar ul li:hover a{
+    letter-spacing: 1.5px;
+    text-decoration: underline;
 }
 .content{
     width: 100%;
@@ -63,4 +68,17 @@
 }
 #icon{
     cursor: pointer;
+}
+
+.para{
+    animation: changing_opacity 1.5s linear infinite alternate;
+}
+
+@keyframes changing_opacity{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .2;
+    }
 }

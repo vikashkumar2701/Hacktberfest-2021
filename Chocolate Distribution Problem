@@ -1,0 +1,47 @@
+class Solution{
+    public:
+    long long findMinDiff(vector<long long> a, long long n, long long m){
+    //code
+    long long min=a[0],c=0,i,j;
+    for(i=1;i<n;i++)
+    {
+        if(min<a[i])
+        min=a[i];
+    }
+    sort(a.begin(),a.end());
+    for(i=0;i<=n-m;i++)
+    {
+       j=i+m-1;
+        c=a[j]-a[i];
+       
+        if(c<min)
+        min=c;
+        c=0;
+    }
+    return min;
+    }   
+};
+
+// { Driver Code Starts.
+int main() {
+	long long t;
+	cin>>t;
+	while(t--)
+	{
+		long long n;
+		cin>>n;
+		vector<long long> a;
+		long long x;
+		for(long long i=0;i<n;i++)
+		{
+			cin>>x;
+			a.push_back(x);
+		}
+		
+		long long m;
+		cin>>m;
+		Solution ob;
+		cout<<ob.findMinDiff(a,n,m)<<endl;
+	}
+	return 0;
+}  // } Driver Code Ends
