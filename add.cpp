@@ -15,6 +15,8 @@ int main() {
 
   	cout<<"Sum of 2 and 5 is \n";
 	cout << 2+5;
+	cout<<"Addition of 6 and 4 is \n";
+	cout<<6+4;
 
 
 
