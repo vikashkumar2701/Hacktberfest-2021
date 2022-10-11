@@ -1,3 +1,5 @@
+//cpp code for binary tree
+
 public class BinaryTreeUse{
 
     public static BinaryTreeNode<Integer> takeTreeInputBetter(boolean isRoot, int parentData, boolean isLeft){
