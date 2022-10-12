@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     int n1,n2,n3;
-    cout<<"Enter three numbers: ";
+    cout<<"Enter three numbers: "<<endl;
     cin>>n1>>n2>>n3;
 
     if(n1>n2)
