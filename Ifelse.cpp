@@ -11,7 +11,7 @@ int main()
 
     if(n1>n2)
     {
-        if(n1>n3)
+        if(n1 > n3)
         cout<<n1<<endl;
     }
 
