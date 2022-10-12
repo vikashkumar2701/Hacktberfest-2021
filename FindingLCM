@@ -13,7 +13,7 @@ int main()
     {
         if (max % n1 == 0 && max % n2 == 0)
         {
-            cout << "LCM = " << max;
+            cout << "LCM = " << max<<endl;
             break;
         }
         else
