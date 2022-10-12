@@ -11,7 +11,7 @@ int main()
 
     do
     {
-        if (max % n1 == 0 && max % n2 == 0)
+        if (max % n1 == 0 && max%n2 == 0)
         {
             cout << "LCM = " << max<<endl;
             break;
