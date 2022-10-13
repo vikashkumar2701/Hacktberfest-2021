@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Returns count of ways to color k posts
+
 long countWays(int n, int k)
 {
 	long dp[n + 1];
