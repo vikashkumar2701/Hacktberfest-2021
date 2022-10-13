@@ -12,7 +12,7 @@ int main()
     if(n1>n2)
     {
         if(n1 > n3)
-        cout<<n1<<endl;
+        cout<<n1<<"  "<<endl;
     }
 
     if(n2>n1)
