@@ -23,5 +23,6 @@ int main()
 {
 	int n = 3, k = 2;
 	cout << countWays(n, k) << endl;
+	cout<<endl;
 	return 0;
 }
