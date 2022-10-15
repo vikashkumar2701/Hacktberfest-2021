@@ -1,4 +1,4 @@
-// Quick sort in C
+// Quick sort in C language
 
 #include <stdio.h>
 
