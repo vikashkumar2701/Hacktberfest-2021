@@ -16,7 +16,7 @@ class MyQueue{
 
     static void enqueue(int data){
         if(rear>capacity){
-            System.out.println("Queue full......");
+            System.out.println("Queue full.....");
             return;
         }
         else if(rear==-1){
