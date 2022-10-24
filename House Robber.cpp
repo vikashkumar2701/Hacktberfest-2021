@@ -18,3 +18,4 @@ public:
         return q;
     }
 };
+//It's nicely done.
