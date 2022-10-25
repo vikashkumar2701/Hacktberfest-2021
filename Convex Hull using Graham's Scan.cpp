@@ -28,6 +28,7 @@ void convex_hull(vector<pt>& a)
     vector<pt> up, down;
     up.push_back(p1);
     down.push_back(p1);
+    //working loop
     for (int i = 1; i < (int)a.size(); i++) 
     {
         if (i == a.size() - 1 || cw(p1, a[i], p2)) 
