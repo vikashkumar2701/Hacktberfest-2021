@@ -1,4 +1,4 @@
-//cpp program demonstrating if else 
+//cpp program demonstrating if else.
 
 #include<iostream>
 using namespace std;
