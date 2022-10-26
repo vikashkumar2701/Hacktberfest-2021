@@ -1,4 +1,4 @@
-//cpp code to demonstrate cout functionality
+//cpp code to demonstrate cout functionality.
 
 #include <bits/stdc++.h>
 
