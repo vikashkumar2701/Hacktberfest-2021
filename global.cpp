@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 int global = 5;
 void sum(int a) 
 {
