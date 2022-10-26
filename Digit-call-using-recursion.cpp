@@ -16,6 +16,7 @@ void saydigit(int n, string arr[])
     saydigit(n, arr);
     cout << arr[digit] << " " << endl;
 }
+// Main function
 int main()
 {
     string arr[10] = {"Zero", "one", "Two", "Three", "Four", "Five ", "six", "Seven",
