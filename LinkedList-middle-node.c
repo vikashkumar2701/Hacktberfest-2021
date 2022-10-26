@@ -33,7 +33,7 @@ void push(struct Node** head, int new_data)
 
 	(*head) = new_node;
 }
-
+//Print function
 void printList(struct Node *ptr)
 {
 	while (ptr != NULL)
@@ -43,7 +43,7 @@ void printList(struct Node *ptr)
 	}
 	printf("NULL\n");
 }
-
+//Main function
 int main()
 {
 	struct Node* head = NULL;
