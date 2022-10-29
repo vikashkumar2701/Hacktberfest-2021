@@ -1,0 +1,46 @@
+class Solution
+{
+    public:
+    //Function to find the maximum money the thief can get.
+    int FindMaxSum(int nums[], int n)
+    {int i,j,c=0,r=0,a[n];
+        
+        if(n==1)
+            return nums[0];
+        else if(n==2)
+            return max(nums[0],nums[1]);
+         else 
+         {  a[0]=nums[0];
+            a[1]=max(nums[0],nums[1]);
+        for(i=2;i<n;i++)
+        {
+            a[i]=max(a[i-1],(a[i-2]+nums[i]));
+        }}
+        return a[n-1];
+    }
+        // Your code here
+    
+};
+
+// { Driver Code Starts.
+int main()
+{
+    //taking total testcases
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    //taking number of houses
+		int n;
+		cin>>n;
+		int a[n];
+		
+		//inserting money of each house in the array
+		for(int i=0;i<n;++i)
+			cin>>a[i];
+		Solution ob;
+		//calling function FindMaxSum()
+		cout<<ob.FindMaxSum(a,n)<<endl;
+	}
+	return 0;
+}
