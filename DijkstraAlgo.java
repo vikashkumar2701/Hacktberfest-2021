@@ -134,10 +134,10 @@ class Main
                 new Edge(4, 1, 1), new Edge(4, 2, 8), new Edge(4, 3, 2)
         );
  
-        // total number of nodes in the graph (labelled from 0 to 4)
+        // Total number of nodes in the graph (labelled from 0 to 4)
         int n = 5;
  
-        // construct graph
+        // Construct graph
         Graph graph = new Graph(edges, n);
  
         // run the Dijkstra’s algorithm from every node
